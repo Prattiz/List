@@ -1,0 +1,8 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1.2rem;
+    background: var(--gray_700);
+    padding: 7.2rem 0 8.2rem;
+}
