@@ -33,6 +33,11 @@ body{
 
 button{
     cursor: pointer;
+    border: none;
+}
+
+input{
+    border: none;
 }
 
 a{

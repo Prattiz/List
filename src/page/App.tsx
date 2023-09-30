@@ -1,19 +1,19 @@
 import { Header } from "../components/Header"
+import { Request } from "../components/Request"
 
-function App() {
+export function App() {
+
+  //back-end simulation:
 
   return (
     <div>
       <Header/>
 
       <main>
-          <h1>hello world</h1>
+          <Request />
       </main>
     
     </div>
-    
-    
   )
 }
 
-export default App
