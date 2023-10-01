@@ -32,7 +32,7 @@ span{
 }
 
 
-.content{
+.noContent{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,12 +42,59 @@ span{
     font-size: 1.6rem;
     color: var(--gray_300);
     /* sumir display */
-    /* display: none; */
-
+    display: none;  
     > svg{
         color: var(--gray_400);
     }
-    
-    
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--gray_500);
+    width: 100%;
+    padding: 1.6rem;
+    border-radius: 8px;
+    color:var(--gray_100);
+
+}
+
+.task{
+    width: 94%;
+    font-size: 1.4rem;
+}
+
+.trash{
+    background: none;
+    color:var(--gray_300);
+    padding: .5rem .6rem;
+}
+
+
+.trash:hover{
+    color: var(--red_100);
+}
+
+  
+input.check{
+    display: none;
+}
+
+.labelCB label::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 2.3px solid var(--blue_100);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+input.check:checked + label::before{
+    background: url("../../assets/checked.svg") no-repeat center center;
+    width: 25px;
+    height: 25px;
+    border: none;
 }
 

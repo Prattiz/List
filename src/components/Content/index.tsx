@@ -1,5 +1,6 @@
 import styles from "./content.module.css";
-import { BsClipboard } from "react-icons/bs"
+import { BsClipboard } from "react-icons/bs";
+import {PiTrashBold} from "react-icons/pi"
 
 
 export function Content(){
@@ -17,13 +18,25 @@ export function Content(){
                 </div>
             </div>
 
-            <div className={styles.content}>
+            <div className={styles.noContent}>
                 <BsClipboard size={50}/>
                 <div>
                     <strong>Você ainda não tem tarefas cadastradas</strong>
                     <p>Crie tarefas e organize seus itens a fazer</p>
                 </div>
                 
+            </div>
+
+            <div className={styles.content}>
+                <div className={styles.labelCB}>
+                    <input className={styles.check} type="checkbox" id="checkbox"/>
+                    <label htmlFor="checkbox"></label>
+                </div>
+                
+
+                <p className={styles.task}>content content content content content</p>
+
+                <button className={styles.trash}><PiTrashBold size={20}/></button>
             </div>
 
         </main>
