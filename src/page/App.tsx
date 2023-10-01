@@ -1,5 +1,6 @@
-import { Header } from "../components/Header"
-import { Request } from "../components/Request"
+import { Header } from "../components/Header";
+import { Request } from "../components/Request";
+import { Content } from "../components/Content";
 
 export function App() {
 
@@ -11,6 +12,8 @@ export function App() {
 
       <main>
           <Request />
+          
+          <Content/>
       </main>
     
     </div>

@@ -5,13 +5,13 @@ export function Request(){
     return(
         <div className={styles.request}>
             <form>
-            <input 
-            className={styles.input}
-            type="text"
-            placeholder="Adicione uma Nova Tarefa" 
-            />
+                <input 
+                className={styles.input}
+                type="text"
+                placeholder="Adicione uma Nova Tarefa" 
+                />
 
-            <button type="submit" className={styles.button}>Criar <AiOutlinePlusCircle/> </button>
+                <button type="submit" className={styles.button}>Criar <AiOutlinePlusCircle/></button>
             </form>
             
         </div>
