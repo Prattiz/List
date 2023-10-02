@@ -63,6 +63,8 @@ span{
 .task{
     width: 94%;
     font-size: 1.4rem;
+    
+    
 }
 
 .trash{
@@ -81,11 +83,11 @@ input.check{
     display: none;
 }
 
-.labelCB label::before{
+label::before{
     content: '';
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 17px;
+    height: 17px;
     border: 2.3px solid var(--blue_100);
     border-radius: 20px;
     cursor: pointer;
@@ -93,8 +95,10 @@ input.check{
 
 input.check:checked + label::before{
     background: url("../../assets/checked.svg") no-repeat center center;
-    width: 25px;
-    height: 25px;
     border: none;
 }
 
+.checkedInput{
+    text-decoration: line-through;
+    color: var(--gray_300);
+}
