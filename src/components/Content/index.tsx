@@ -18,7 +18,7 @@ export function Content({contents, setContents}: OfContents) {
   };
 
   const handleDeleteTask = (index: number) => {
-    setContents(prev => prev.filter((task, inx) => index !== inx))
+    setContents(prev => prev.filter((_ , inx) => index !== inx))
   }
 
   return (
@@ -33,7 +33,6 @@ export function Content({contents, setContents}: OfContents) {
         <div className={styles.info}>
           <strong className={styles.blue}>Concluídas</strong>
 
-
           {
             contents.length? 
             <span>
@@ -43,7 +42,6 @@ export function Content({contents, setContents}: OfContents) {
             :
             <span>0</span>
           }
-
 
         </div>
       </div>

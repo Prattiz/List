@@ -8,10 +8,11 @@ export function Request({ handleCreateNewTask }: any){
 
     const [newTask, setNewTask] = useState('');
     
-    function sla(){
+    function handleCreate(){
         setNewTask(newTask)
         handleCreateNewTask({ text:newTask, isChecked:false })
     }
+    
     return(
         <div className={styles.request}>
             <form onSubmit={handleCreateNewTask}>
@@ -23,7 +24,7 @@ export function Request({ handleCreateNewTask }: any){
                 onChange={(e) => setNewTask(e.target.value)}
                 />
 
-                <button type="button" onClick={sla} className={styles.button}>Criar <AiOutlinePlusCircle/></button>
+                <button type="button" onClick={handleCreate} className={styles.button}>Criar <AiOutlinePlusCircle/></button>
             </form>
         </div>
     )  

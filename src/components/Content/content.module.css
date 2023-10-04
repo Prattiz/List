@@ -2,6 +2,7 @@
     margin: 0 auto;
     max-width: 74rem;
     margin-top: 9rem;
+    padding: 0 4rem;
 }
 
 .infos{
@@ -96,5 +97,13 @@ input.check:checked + label::before{
 .checkedInput{
     text-decoration: line-through;
     color: var(--gray_300);
+}
+
+@media (max-width: 808px){
+    .infos{
+        flex-direction: column;
+        align-items: center;
+        gap:5rem
+    }
 }
 

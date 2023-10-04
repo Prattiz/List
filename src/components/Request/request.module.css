@@ -12,7 +12,7 @@ form{
 }
 
 .input{
-    width: 60rem;
+    width: 70rem;
     padding: 1.6rem;
     background: var(--gray_600);
     border-radius: 8px;
@@ -25,10 +25,23 @@ form{
     display: flex;
     justify-content: center;
     gap: 4px;
-    background: var(--blue_100);
+    background: var(--blue_500);
     color: var(--gray_100);
     border-radius: 8px;
     font-weight: bold;
     width: 9rem;
 }
 
+
+@media (max-width: 808px){
+    .input{
+        width: 100%;
+    }
+    form{
+        flex-direction: column;
+    }
+    .button{
+        padding: 1.6rem 10rem;
+    }
+
+}
