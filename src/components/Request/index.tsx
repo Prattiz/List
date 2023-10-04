@@ -1,23 +1,30 @@
 import styles from "./request.module.css";
-import { AiOutlinePlusCircle } from "react-icons/ai"
+import { AiOutlinePlusCircle } from "react-icons/ai";
+import { useState } from "react";
 
 
 
+export function Request({ handleCreateNewTask }: any){
 
-export function Request(){
+    const [newTask, setNewTask] = useState('');
+    
+    function sla(){
+        setNewTask(newTask)
+        handleCreateNewTask({ text:newTask, isChecked:false })
+    }
     return(
         <div className={styles.request}>
-            <form>
+            <form onSubmit={handleCreateNewTask}>
                 <input 
                 className={styles.input}
                 type="text"
                 placeholder="Adicione uma Nova Tarefa" 
-                
+                value={newTask}
+                onChange={(e) => setNewTask(e.target.value)}
                 />
 
-                <button type="submit" className={styles.button}>Criar <AiOutlinePlusCircle/></button>
+                <button type="button" onClick={sla} className={styles.button}>Criar <AiOutlinePlusCircle/></button>
             </form>
-            
         </div>
-    )
+    )  
 }

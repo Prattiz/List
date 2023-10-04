@@ -10,7 +10,6 @@
     margin-bottom: 2.4rem;
     justify-content: space-between;
     align-items: flex-end;
-    
 }
 
 .info{
@@ -31,7 +30,6 @@ span{
     border-radius: 10px;
 }
 
-
 .noContent{
     display: flex;
     flex-direction: column;
@@ -41,8 +39,7 @@ span{
     gap: 16px;
     font-size: 1.6rem;
     color: var(--gray_300);
-    /* sumir display */
-    display: none;  
+     
     > svg{
         color: var(--gray_400);
     }
@@ -57,7 +54,7 @@ span{
     padding: 1.6rem;
     border-radius: 8px;
     color:var(--gray_100);
-
+    margin-bottom: 1rem;
 }
 
 .task{
@@ -73,12 +70,10 @@ span{
     padding: .5rem .6rem;
 }
 
-
 .trash:hover{
     color: var(--red_100);
 }
 
-  
 input.check{
     display: none;
 }
@@ -102,3 +97,4 @@ input.check:checked + label::before{
     text-decoration: line-through;
     color: var(--gray_300);
 }
+
